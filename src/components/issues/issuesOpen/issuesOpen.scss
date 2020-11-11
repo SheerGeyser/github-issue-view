@@ -1,0 +1,126 @@
+.issues-wrapper {
+    border-right: 1px solid rgb(228, 228, 228);
+    position: fixed;
+    margin: 0;
+    height: 100%;
+    overflow-wrap: break-word;
+    .btn{
+        background-color:  transparent !important;
+    }
+
+    .back-btn{
+        display: flex;
+
+        button{
+            background-color: none;
+        }
+        span{
+            align-self: center;
+            color: #495057;
+            text-decoration: none;
+        }
+
+        @media (min-width: 0px) and (max-width: 767px) {
+            width: 97vw;
+        }
+    
+        @media (min-width: 768px) and (max-width: 991px) {
+            width: 27vw;
+        }
+    
+        @media (min-width: 992px) and (max-width: 1199px) {
+            width: 23vw;
+        }
+    
+        @media (min-width: 1200px) {
+            width: 24vw;
+        }
+    }
+
+
+    .finder {
+        margin: 10px 20px;
+    }
+
+    .nav-tabs a {
+        flex: auto;
+        margin-top: 1px;
+
+        &:first-child {
+            margin-left: 4px;
+
+        }
+    }
+
+    .issues-content-wrapper {
+        margin-bottom: 20px;
+
+        .issues-content {
+            margin: 10px 20px;
+            overflow: auto;
+            max-height: 75vh;
+
+            @media (min-height: 708px) and (max-height: 767px) {
+                height: 68vh;
+            }
+
+            @media (min-height: 400px) and (max-height: 707px) {
+                max-height: 65vh;
+            }
+
+            @media (min-height: 200px) and (max-height: 399px) {
+                max-height: 50vh;
+            }
+
+        }
+    }
+
+
+
+
+    @media (min-width: 0px) and (max-width: 767px) {
+        width: 100vw;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 30vw;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 25vw;
+    }
+
+    @media (min-width: 1200px) {
+        width: 25vw;
+    }
+
+}
+
+
+
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    position: relative;
+    width: 5px;
+    /* ширина для вертикального скролла */
+    height: 8px;
+    /* высота для горизонтального скролла */
+    background-color: none;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #23538694;
+    border-radius: 9em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #253861;
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background-color: none;
+}
